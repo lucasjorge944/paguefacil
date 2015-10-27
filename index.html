@@ -13,12 +13,12 @@
 	<link rel="stylesheet" type="text/css" href="includes/slick/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="includes/styles.css">
 </head>
-<body>
+<body onscroll="functionMenu();">
 	<div class="menu-bar">
 		<div class="container-fluid" style="padding-left: 7%;">
   			<div class="row">
 			  <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
-			  	<img src="includes/imgs/logo.png" alt="PareFacil" class="img-responsive">
+			  	<img id="logo-menu" src="includes/imgs/logo.png" alt="PareFacil" class="img-responsive">
 			  </div>
 			  <div class="col-xs-6 col-sm-6 col-md-7 col-lg-7">
 				<div id='cssmenu'>
@@ -49,7 +49,7 @@
 					</center>
 			  	</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="text2">
-					<p id="titulo1">WE HAVE MADE A<br> GREAT APP...</p>
+					<p id="titulo1">WE HAVE MADE A GREAT APP...</p>
 					<p id="desc1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor similique a ratione eveniet quas, sunt asperiores, quam ad voluptas distinctio, aliquid culpa consectetur! Quisquam, incidunt culpa corporis fuga aperiam quos.</p>
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -79,7 +79,7 @@
 					<img src="includes/imgs/03.png" id="imgPasso3">
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<div class="itensTab">
+					<div class="itensTab itensTab-first">
 						<div class="row">
 							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i id="passo1" class="passo1">1</i></div>
 							<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style="float:left;"><p class="passo1" id="texto2">RECARREGUE</p></div>
@@ -122,37 +122,63 @@
 			</div>
 		</div>
 	</div>
+	<hr>
 	<div class="section3">
+		<p id="titulo5">ONDE UTILIZAR PAGUE FÁCIL?</p>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<img src="includes/imgs/carpark.jpg" class="img-responsive">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="margin:0;padding:0;">
+					<img src="includes/imgs/estacionamento.png" alt="Estacionamentos" class="img-responsive">
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 descUtilizar">
-					<p id="titulo4">UTILIZE EM ESTACIONAMENTOS...</p>
-					<p id="texto4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quibusdam incidunt impedit repellendus optio delectus obcaecati esse, labore voluptates, ratione vitae voluptatem cumque temporibus.</p>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="margin:0;padding:0;">
+					<img src="includes/imgs/onibus.png" alt="Estacionamentos" class="img-responsive">
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<p id="titulo4">UTILIZE EM ESTACIONAMENTOS...</p>
-					<p id="texto4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quibusdam incidunt impedit repellendus optio delectus obcaecati esse, labore voluptates, ratione vitae voluptatem cumque temporibus.</p>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 descUtilizar">
-					<img src="includes/imgs/carpark.jpg" class="img-responsive">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="margin:0;padding:0;">
+					<img src="includes/imgs/taxi.png" alt="Taxi" class="img-responsive">
 				</div>
 			</div>
 		</div>
 	</div>
-	</body>
+	<div class="section4">
+		<p id="titulo6">ONDE RECARREGAR?</p>
+		<p id="desc6">Encontre o Ponto de Recarga mais próximo de você!</p>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 market-appstore" style="margin:0;">
+					<img src="includes/imgs/logoapple.png" alt="Apple">
+					<p id="text7">Baixe o aplicativo na</p>
+					<p id="market">App Store</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 market-google" style="margin:0;">
+					<img src="includes/imgs/google-play-logo.png" alt="Google Play">
+					<p id="text7">Baixe o aplicativo na</p>
+					<p id="market">Google Play</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 market-windows" style="margin:0;">
+					<img src="includes/imgs/windows-store.png" alt="Windows Store">
+					<p id="text7">Baixe o aplicativo na</p>
+					<p id="market">Windows Store</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
 </html>
-<script type="text/javascript" src="includes/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="includes/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="includes/js/flowtype.js"></script>
 <script type="text/javascript" src="includes/bs/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript" src="includes/menu/script.js"></script>
-<script type="text/javascript" src="includes/flowtype.js"></script>
-<script type="text/javascript" src="includes/responsivefonts.js"></script>
-<script type="text/javascript" src="includes/tabpane.js"></script>
-<script type="text/javascript" src="includes/scripts.js"></script>
+<script type="text/javascript" src="includes/js/scripts.js"></script>
 <script type="text/javascript" src="includes/slick/slick.js"></script>
 <script type="text/javascript">
 	$(".slick-slider").slick({
