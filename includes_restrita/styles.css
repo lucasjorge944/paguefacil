@@ -1,0 +1,71 @@
+#body-login{
+	background-color: #2E3E4E;
+	font-family: "Open Sans";
+}
+
+#body-cadastro{
+	background-color: #2E3E4E;
+	font-family: "Open Sans";
+}
+
+#body-restrita{
+	background-color: #F0F0F0;
+	font-family: "Open Sans";
+}
+
+#logo{
+	padding-bottom: 30px;
+}
+
+#formLogin{
+	background-color: white;
+}
+
+.centro{
+	position:absolute;
+	left:40%;
+	top:20%;
+	margin-left:-120px;
+	margin-top:-45px;
+	width: 500px;
+}
+
+
+#lostPass{
+	text-align: center;
+	font-size: 16px;
+	color: #DEDABC;
+}
+
+#lostPass a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #5BC0DE;
+	font-size: 16px;
+}
+
+.tabsCadastro{
+	padding-left: 30%;
+	padding-right: 30%;
+	padding-top: 10%;
+}
+
+#item{
+	color: white;
+	text-decoration: none;
+	text-transform: none;
+	width: 250px;
+	font-size: 40px;
+}
+
+.left-off-canvas-menu{
+
+}
+
+@media (min-width:0px) and (max-width:768px){
+	.centro{
+		width: 300px;
+		left: 42%;
+
+	}
+}
