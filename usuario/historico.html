@@ -57,7 +57,7 @@
 				<aside class="left-off-canvas-menu">
 					<img src="../includes_restrita/imgs/logo.png" >
 					<div class="icon-bar vertical four-up">
-						<a href="http://localhost/parefacil/.html" class="item" id="item">
+						<a href="http://localhost/parefacil/restrita_usuario.html" class="item" id="item">
 							<i class="fa fa-home"></i>
 							<label>Home</label>
 						</a>
@@ -92,12 +92,61 @@
                     <form class="formPagar">
                     	<div class="row">
                     		<div class="large-12 columns">
-                    			<label id="titulo1">Ache os estacionamentos credenciados ao seu redor</label>
+                    			<label id="titulo1">Digite o código do Adesivo ou Selecione um veículo</label>
                     		</div>
                     	</div>
                     	<div class="row">
-                    		<div class="small-12 large-12 columns">
-                    			<div id="map"></div>
+                    		<div class="large-8 columns">
+                    			<div class="row collapse">
+							        <div class="small-10 columns">
+							          <input type="text" placeholder="Digite o código do Adesivo">
+							        </div>
+							        <div class="small-2 columns">
+							          <a class="button success postfix" id="procurar-adesivo-historico">Procurar</a>
+							        </div>
+							    </div>
+                    		</div>
+                    		<div class="large-4 columns">
+                    			<select id="placas-historico">
+                    			  <option value="husker">Veículos</option>
+						          <option value="husker">ABC1234</option>
+						          <option value="starbuck">HMB4133</option>
+						          <option value="hotdog">GZW5240</option>
+						        </select>
+                    		</div>
+                    	</div>
+                    	<div class="row">
+                    		<div class="large-12 columns">
+                    			<table>
+                    				<thead>
+                    					<tr>
+                    						<th width="100">Placa</th>
+                    						<th width="200">Data/Hora</th>
+                    						<th width="400">Local</th>
+                    						<th width="300">Resultado</th>
+                    					</tr>
+                    				</thead>
+                    				<tbody>
+                    					<tr>
+                    						<td>ABC1234</td>
+                    						<td>25/08/2015 10:36:15</td>
+                    						<td>Estacionamento Shoping Cidade</td>
+                    						<td><label style="font-size:14px;" class="label success">Pagamento Confirmado</label></td>
+                    					</tr>
+                    					<tr>
+                    						<td>HMB4133</td>
+                    						<td>24/08/2015 16:36:15</td>
+                    						<td>Estacionamento BH Shoping</td>
+                    						<td><label style="font-size:14px;" class="label success">Pagamento Confirmado</label></td>
+                    					</tr>
+                    					<tr>
+                    						<td>GZW5240</td>
+                    						<td>15/08/2015 15:41:15</td>
+                    						<td>Estacionamento do José</td>
+                    						<td><label style="font-size:14px;" class="label success">Pagamento Confirmado</label></td>
+                    					</tr>
+                    				</tbody>
+                    			</table>
                     		</div>
                     	</div>
                     </form>                 
@@ -117,4 +166,3 @@
 $(document).foundation();
 </script>
 <script type="text/javascript" src="../includes_restrita/js/scripts.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>

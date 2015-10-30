@@ -30,10 +30,10 @@
 
 					<div class="middle tab-bar-section">
 						<div class="row">
-						  <div class="small-12 large-12 columns">
-                            <span class="success radius label texto-info">Conta: (31)9466-1000</span> 
-							<span class="success radius label texto-info">Saldo: R$50,00</span>
-						  </div>
+							<div class="small-12 large-12 columns">
+								<span class="success radius label texto-info">Conta: (31)9466-1000</span> 
+								<span class="success radius label texto-info">Saldo: R$50,00</span>
+							</div>
 						</div>
 					</div>
 
@@ -57,7 +57,7 @@
 				<aside class="left-off-canvas-menu">
 					<img src="../includes_restrita/imgs/logo.png" >
 					<div class="icon-bar vertical four-up">
-						<a href="http://localhost/paguefacil/restrita_usuario.html" class="item" id="item">
+						<a href="http://localhost/parefacil/restrita_usuario.html" class="item" id="item">
 							<i class="fa fa-home"></i>
 							<label>Home</label>
 						</a>
@@ -69,11 +69,11 @@
 							<i class="fa fa-car"></i>
 							<label>Onde Estacionar</label>
 						</a>
-						<a class="item" id="item">
+						<a href="historico.html" class="item" id="item">
 							<i class="fa fa-history"></i>
 							<label>Histórcio de Utilização</label>
 						</a>
-						<a class="item" id="item">
+						<a href="comprar.html" class="item" id="item">
 							<i class="fa fa-credit-card"></i>
 							<label>Comprar Créditos</label>
 						</a>
@@ -89,77 +89,210 @@
 				</aside>
 
 				<section class="main-section" style="height:1000px;">
-                    <form class="formPagar">
-                    	<div class="row">
-                    		<div class="large-12 columns">
-                    			<label id="titulo1">Digite o código do Adesivo ou Selecione um veículo</label>
-                    		</div>
-                    	</div>
-                    	<div class="row">
-                    		<div class="large-8 columns">
-                    			<div class="row collapse">
-							        <div class="small-10 columns">
-							          <input type="text" placeholder="Digite o código do Adesivo">
-							        </div>
-							        <div class="small-2 columns">
-							          <a class="button success postfix" id="procurar-adesivo">Procurar</a>
-							        </div>
-							    </div>
-                    		</div>
-                    		<div class="large-4 columns">
-                    			<select id="placas">
-                    			  <option value="husker">Veículos</option>
-						          <option value="husker">ABC1234</option>
-						          <option value="starbuck">HMB4133</option>
-						          <option value="hotdog">GZW5240</option>
-						        </select>
-                    		</div>
-                    	</div>
-                    	<div class="row" id="infos-pagamento">
-                    		<div class="large-12 columns">
-                    			<div class="panel">
-	                    			<div class="row">
-	                    				<center><h3>Estacionamento Shoping Cidade</h3></center>
-	                    				<div class="small-12 large-6 columns">
-								  			<h5>Data: 01/08/2015</h5>
-								  			<h5>Hora Entrada: 14:22</h5>
-								  			<h5>Hora Saida: 17:28</h5>
-								  			<h5>Tempo de Permanência: 06 horas e 06 minutos</h5>
-	                    				</div>
-	                    				<div class="small-12 large-6 columns">
-	                    					<center><h1>R$9,00</h1></center>
-	                    					<center><a id="pagar" class="button alert expand">Pagar</a></center>
-	                    				</div>
-	                    			</div>
+					<form class="formPagar">
+						<div class="row">
+							<div class="large-12 columns">
+								<label id="titulo1">Digite o código do Adesivo ou Selecione um veículo</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-8 columns">
+								<div class="row collapse">
+									<div class="small-10 columns">
+										<input type="text" placeholder="Digite o código do Adesivo">
+									</div>
+									<div class="small-2 columns">
+										<a class="button success postfix" id="procurar-adesivo">Procurar</a>
+									</div>
 								</div>
-                    		</div>
-                    	</div>
-                    	<div class="row" id="metodo-pagamento">
-                    		<div class="large-12 columns">
-                    			<div class="panel">
-	                    			<div class="row">
-	                    				<center><h3>Forma de Pagamento</h3></center>
-	                    				<div class="small-12 large-6 columns">
-								  			<input type="radio" name="pokemon" value="Red" id="elo"><label for="elo"><img src="../includes_restrita/imgs/elo.png"></label>
-      										<input type="radio" name="pokemon" value="Red" id="mastercard"><label for="mastercard"><img src="../includes_restrita/imgs/mastercard.png"></label>
-      										<input type="radio" name="pokemon" value="Red" id="visa"><label for="visa"><img src="../includes_restrita/imgs/visa.png"></label>
-      										<input type="radio" name="pokemon" value="Red" id="pague"><label for="pague"><img src="../includes_restrita/imgs/logo_bandeira.png"></label>
-	                    				</div>
-	                    				<div class="small-12 large-6 columns">
-	                    					<div class="row collapse">
-	                    						<div class="small-10 columns">
-	                    							<input type="password" placeholder="Digite sua Senha">
-	                    						</div>
-	                    						<div class="small-2 columns">
-	                    							<a id="finalizar-pagamento" data-reveal-id="myModal" class="button success postfix">Finalizar</a>
-	                    						</div>
-	                    					</div>                 				
-	                    				</div>
-	                    			</div>
+							</div>
+							<div class="large-4 columns">
+								<select id="placas">
+									<option value="husker">Veículos</option>
+									<option value="husker">ABC1234</option>
+									<option value="starbuck">HMB4133</option>
+									<option value="hotdog">GZW5240</option>
+								</select>
+							</div>
+						</div>
+						<div class="row" id="infos-pagamento">
+							<div class="small-12 large-12 columns">
+								<div class="panel">
+									<div class="row">
+										<center><h3 id="local_estacionamento">Estacionamento Shoping Cidade</h3></center>
+										<div class="small-12 large-6 columns">
+											<div class="row">
+												<div class="small-6 large-4 columns">
+													<label>Data:</label>
+												</div>
+												<div class="small-6 large-8 columns">
+													<label id="data_estacionamento">01/08/2015</label>
+												</div>
+											</div>
+											<div class="row">
+												<div class="small-6 large-4 columns">
+													<label>Hora Entrada:</label>
+												</div>
+												<div class="small-6 large-8 columns">
+													<label id="entrada_estacionamento">14:22</label>
+												</div>
+											</div>
+											<div class="row">
+												<div class="small-6 large-4 columns">
+													<label>Hora Saida:</label>
+												</div>
+												<div class="small-6 large-8 columns">
+													<label id="saida_estacionamento">17:28</label>
+												</div>
+											</div>
+											<div class="row">
+												<div class="small-6 large-4 columns">
+													<label>Permanência:</label>
+												</div>
+												<div class="small-6 large-8 columns">
+													<label id="permanencia_estacionamento">06 horas e 06 minutos</label>
+												</div>
+											</div>
+										</div>
+										<div class="small-12 large-6 columns">
+											<center><label id="valor_total_paga"><h1>R$9,00</h1></label></center>
+											<center><a id="pagar" class="button alert expand">Pagar</a></center>
+										</div>
+									</div>
 								</div>
-                    		</div>
-                    	</div>
-                    </form>                 
+							</div>
+						</div>
+						<div class="row" id="metodo-pagamento">
+							<div class="small-12 large-12 columns">
+								<div class="panel">
+									<div class="row">
+										<center><h3>Forma de Pagamento</h3></center>
+										<div class="small-12 large-6 columns" id="bandeiras">
+											<input type="radio" name="pokemon" value="elo" id="elo"><label for="elo"><img src="../includes_restrita/imgs/elo.png"></label>
+											<input type="radio" name="pokemon" value="mastercard" id="mastercard"><label for="mastercard"><img src="../includes_restrita/imgs/mastercard.png"></label>
+											<input type="radio" name="pokemon" value="visa" id="visa"><label for="visa"><img src="../includes_restrita/imgs/visa.png"></label>
+											<input type="radio" name="pokemon" value="pague" id="pague"><label for="pague"><img src="../includes_restrita/imgs/pague-facil.png"></label>
+										</div>
+										<div class="small-12 large-6 columns" id="campo-senha">
+											<div class="row collapse">
+												<div class="small-10 columns">
+													<input type="text" placeholder="Digite a senha do Pague Fácil">
+												</div>
+												<div class="small-2 columns">
+													<a data-reveal-id="modalFinalizarPag" class="button postfix success">Finalizar</a>
+												</div>
+											</div>     		
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row" id="cartao-credito">
+							<div class="small-12 large-12 columns">
+								<div class="panel">
+									<div class="row">
+										<center><h3>Dados do Cartão</h3></center>
+										<div class="small-12 large-12 columns">			
+											<div class="panel">
+												<div class="row" style="margin-top:20px;">
+													<div class="small-12 large-12 columns">
+														<div class="row collapse prefix-radius">
+															<div class="small-5 large-4 columns">
+																<span class="prefix">Número</span>
+															</div>
+															<div class="small-7 large-8 columns">
+																<input id="numero-cartao" type="text" placeholder="Somente números">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="small-7 large-7 columns">
+														<div class="row collapse prefix-radius">
+															<div class="small-9 large-7 columns">
+																<span class="prefix">Vencimento</span>
+															</div>
+															<div class="small-3 large-5 columns">
+																<input id="mes" type="text" placeholder="Mês">
+															</div>
+														</div>
+													</div>
+													<div class="small-5 large-5 columns">
+														<input id="ano" type="text" placeholder="Ano">
+													</div>
+												</div>
+												<div class="row">
+													<div class="small-12 large-12 columns">
+														<div class="row collapse prefix-radius">
+															<div class="small-5 large-4 columns">
+																<span class="prefix">Código de Segurança</span>
+															</div>
+															<div class="small-7 large-8 columns">
+																<input id="cod-seguranca" type="text" placeholder="Ex.: 991">
+															</div>
+														</div>
+													</div>
+												</div>
+												<hr>
+												<div class="row">
+													<div class="small-12 large-12 columns">
+														<div class="row collapse prefix-radius">
+															<div class="small-5 large-4 columns">
+																<span class="prefix">Nome</span>
+															</div>
+															<div class="small-7 large-8 columns">
+																<input id="nome" type="text" placeholder="">
+															</div>
+														</div>
+													</div>
+													<div class="small-12 large-12 columns">
+														<div class="row collapse prefix-radius">
+															<div class="small-5 large-4 columns">
+																<span class="prefix">Data de nascimento</span>
+															</div>
+															<div class="small-7 large-8 columns">
+																<input id="data-nascimento" type="text" placeholder="12/12/2012">
+															</div>
+														</div>
+													</div>
+													<div class="small-12 large-12 columns">
+														<div class="row collapse prefix-radius">
+															<div class="small-5 large-4 columns">
+																<span class="prefix">CPF</span>
+															</div>
+															<div class="small-7 large-8 columns">
+																<input id="cpf" type="text" placeholder="Somente números">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="small-7 large-7 columns">
+														<div class="row collapse prefix-radius">
+															<div class="small-9 large-7 columns">
+																<span class="prefix">Telefone</span>
+															</div>
+															<div class="small-3 large-5 columns">
+																<input id="ddd" type="text" placeholder="DDD">
+															</div>
+														</div>
+													</div>
+													<div class="small-5 large-5 columns">
+														<input id="telefone" type="text" placeholder="Número">
+													</div>
+												</div>
+												<div class="row">
+													<div id="finalizar_pagamento" class="small-12 large-12 columns">
+														<a data-reveal-id="modalPagar" class="button expand success">Finalizar</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>                 
 				</section>
 
 				<a class="exit-off-canvas"></a>
@@ -169,24 +302,174 @@
 	</div>
 </body>
 </html>
-<div id="myModal" class="reveal-modal tiny" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-  <center><h2 id="modalTitle">Confirmar Pagamento!</h2></center>
-  <center>
-  <div class="row">
-  	<div class="small-6 large-6 columns">
-  		<a id="confirma-pagamento" class="button success" data-reveal-id="modalPagamentoConfirmado">Sim</a>
-  	</div>
-  	<div class="small-6 large-6 columns">
-  		<a id="confirma-pagamento" class="button alert">Não</a>
-  	</div>
-  </div>
-  </center>
-  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+<div id="modalPagar" class="reveal-modal tiny" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+	<center><h3 id="modalTitle">Dados do Pagamento</h3></center>
+	<center><h6 id="modalTitle" style="color:#F04124;">Confira todos os dados abaixo e confirme o pagamento</h6></center>
+	<div class="row" id="dados-compra">
+		<div class="small-12 large-12 columns">
+			<div class="row">
+				<div class="small-6 large-6 columns">
+					<label>Local: </label>
+				</div>
+				<div class="small-6 large-6 columns" style="text-align:left;">
+					<label id="local"></label>
+				</div>
+			</div>
+		</div>
+		<div class="small-12 large-12 columns">
+			<div class="row">
+				<div class="small-6 large-6 columns">
+					<label>Data: </label>
+				</div>
+				<div class="small-6 large-6 columns" style="text-align:left;">
+					<label id="data"></label>
+				</div>
+			</div>
+		</div>
+		<div class="small-12 large-12 columns">
+			<div class="row">
+				<div class="small-6 large-6 columns">
+					<label>Hora Entrada: </label>
+				</div>
+				<div class="small-6 large-6 columns">
+					<label id="entrada"></label>
+				</div>
+			</div>
+		</div>
+		<div class="small-12 large-12 columns">
+			<div class="row">
+				<div class="small-6 large-6 columns">
+					<label>Hora Saída: </label>
+				</div>
+				<div class="small-6 large-6 columns">
+					<label id="saida"></label>
+				</div>
+			</div>
+		</div>
+		<div class="small-12 large-12 columns">
+			<div class="row">
+				<div class="small-6 large-6 columns">
+					<label>Permanência: </label>
+				</div>
+				<div class="small-6 large-6 columns">
+					<label id="permanencia"></label>
+				</div>
+			</div>
+		</div>
+		<div class="small-12 large-12 columns" style="margin-bottom:20px">
+			<div class="row">
+				<div class="small-6 large-6 columns">
+					<label>Valor Total: </label>
+				</div>
+				<div class="small-6 large-6 columns" style="text-align:left;">
+					<label id="valor_total_pagamento"></label>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="small-12 large-12 columns">
+			<div class="row">
+				<div class="small-6 large-6 columns">
+					<label>Número Cartão: </label>
+				</div>
+				<div class="small-6 large-6 columns" style="text-align:left;">
+					<label id="numero_cartao"></label>
+				</div>
+			</div>
+		</div>
+		<div class="small-12 large-12 columns">
+			<div class="row">
+				<div class="small-6 large-6 columns">
+					<label>Vencimento </label>
+				</div>
+				<div class="small-6 large-6 columns" style="text-align:left;">
+					<label id="data_vencimento"></label>
+				</div>
+			</div>
+		</div>
+		<div class="small-12 large-12 columns" style="margin-bottom:20px;">
+			<div class="row">
+				<div class="small-6 large-6 columns">
+					<label>Código Segurança: </label>
+				</div>
+				<div class="small-6 large-6 columns" style="text-align:left;">
+					<label id="cod_seguranca"></label>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="small-12 large-12 columns">
+			<div class="row">
+				<div class="small-6 large-6 columns">
+					<label>Nome: </label>
+				</div>
+				<div class="small-6 large-6 columns" style="text-align:left;">
+					<label id="nome_cartao"></label>
+				</div>
+			</div>
+		</div>
+		<div class="small-12 large-12 columns">
+			<div class="row">
+				<div class="small-6 large-6 columns">
+					<label>Data Nascimento: </label>
+				</div>
+				<div class="small-6 large-6 columns" style="text-align:left;">
+					<label id="data_nascimento"></label>
+				</div>
+			</div>
+		</div>
+		<div class="small-12 large-12 columns">
+			<div class="row">
+				<div class="small-6 large-6 columns">
+					<label>CPF: </label>
+				</div>
+				<div class="small-6 large-6 columns" style="text-align:left;">
+					<label id="cpf_cartao"></label>
+				</div>
+			</div>
+		</div>
+		<div class="small-12 large-12 columns">
+			<div class="row">
+				<div class="small-6 large-6 columns">
+					<label>Telefone: </label>
+				</div>
+				<div class="small-6 large-6 columns" style="text-align:left;">
+					<label id="telefone_cartao"></label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<center>
+		<div class="row" style="margin-top:30px;">
+			<div class="small-6 large-6 columns">
+				<a class="button alert confirma-pag"><i class="fa fa-times"></i> Cancelar</a>
+				
+			</div>
+			<div class="small-6 large-6 columns">
+				<a class="button success confirma-pag" data-reveal-id="modalPagamentoConfirmado"><i class="fa fa-check"></i> Confirmar</a>
+			</div>
+		</div>
+	</center>
+	<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+<div id="modalFinalizarPag" class="reveal-modal tiny" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+	<center><h2 id="modalTitle">Confirmar Pagamento?</h2></center>
+	<center>
+		<div class="row">
+			<div class="small-6 large-6 columns">
+				<a class="button alert confirma-pag">Não</a>
+			</div>
+			<div class="small-6 large-6 columns">
+				<a class="button success confirma-pag" data-reveal-id="modalPagamentoConfirmado">Sim</a>
+			</div>
+		</div>
+	</center>
+	<a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
 <div id="modalPagamentoConfirmado" class="reveal-modal tiny" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-  <center><h2 style="color:#43AC6A;" id="modalTitle"><i class="fa fa-shopping-cart"></i> Seu pagamento foi realizado.</h2></center>
-  <center><h5 id="modalTitle">Recebrá em instantes um sms com a confirmação.</h5></center>
-  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	<center><h2 style="color:#43AC6A;" id="modalTitle"><i class="fa fa-shopping-cart"></i> Seu pagamento foi realizado.</h2></center>
+	<center><h5 id="modalTitle">Recebrá em instantes um sms com a confirmação.</h5></center>
+	<a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
 <script type="text/javascript" src="../includes_usuario/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="../includes_restrita/foundation/js/vendor/jquery.js"></script>

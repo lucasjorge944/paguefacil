@@ -103,6 +103,14 @@
 	border-radius: 10px;
 }
 
+#cartao-credito{
+	display: none;
+}
+
+#campo-senha{
+	display: none;
+}
+
 @media (min-width:0px) and (max-width:768px){
 	.centro{
 		width: 300px;
